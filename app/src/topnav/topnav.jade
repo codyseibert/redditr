@@ -1,0 +1,6 @@
+.topnav 
+  .col-md-2 redditr LOGO
+  .col-md-2(
+    ng-repeat="link in links"
+    ui-sref="{{link.state}}"
+  ) {{link.name}}
