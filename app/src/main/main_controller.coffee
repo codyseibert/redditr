@@ -10,8 +10,8 @@ module.exports = [
         @state = state
 
     $scope.links = [
-      new Link 'Subs', 'main.subs'
-      new Link 'About', 'main.about'
+      new Link 'SUBS', 'main.subs'
+      new Link 'ABOUT', 'main.about'
     ]
 
 ]

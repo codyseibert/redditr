@@ -1,6 +1,8 @@
-.topnav 
-  .col-md-2 redditr LOGO
-  .col-md-2(
+.topnav
+  .col-md-3.logo redditr LOGO
+  .col-md-2.link(
     ng-repeat="link in links"
+    ng-click="select(link)"
     ui-sref="{{link.state}}"
+    ng-class="{selected: link.selected}"
   ) {{link.name}}

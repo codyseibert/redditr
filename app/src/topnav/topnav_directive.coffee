@@ -9,6 +9,7 @@ module.exports = [
       links: '='
 
     link: (scope, elem, attr) ->
-      console.log 'hi'
-      console.log scope.links
+      scope.select = (link) ->
+        angular.forEach scope.links, (link) -> link.selected = false
+        link.selected = true
 ]
