@@ -1,0 +1,8 @@
+.col-md-6
+  .comment(
+    ng-repeat="comment in comments"
+  )
+    .author {{comment.author}}
+    .html(
+      ng-bind-html="comment.html"
+    ) 

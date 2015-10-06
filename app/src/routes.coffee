@@ -23,6 +23,20 @@ module.exports = [
             controller: 'SubsCtrl'
             templateUrl: 'subs/subs.html'
 
+      .state 'main.subs.sub',
+        url: '/:sub'
+        views:
+          'sub':
+            controller: 'SubCtrl'
+            templateUrl: 'sub/sub.html'
+
+      .state 'main.subs.sub.topic',
+        url: '/:topic'
+        views:
+          'topic':
+            controller: 'TopicCtrl'
+            templateUrl: 'topic/topic.html'
+
       .state 'main.about',
         url: 'about'
         views:

@@ -1,0 +1,9 @@
+.sidenav.no-pad(
+  class="col-md-{{cols}}"
+)
+  .link(
+    ng-repeat="link in links"
+    ng-click="select(link)"
+    ui-sref="{{link.state}}(link.params)"
+    ng-class="{selected: link.selected}"
+  ) {{link.name}}
